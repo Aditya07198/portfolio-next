@@ -12,16 +12,16 @@ export function ExperienceTimeline({ limit }: { limit?: number }) {
 
         <div className="relative ml-5">
           {/* Animated vertical line */}
-          <motion.div
+          <div
             className="absolute left-[9px] w-px bg-slate-300 dark:bg-slate-700 origin-top"
+            style={{ top: "20px", bottom: "32px" }}
+          ></div>
+          <motion.div
+            className="w-full h-full"
             initial={{ scaleY: 0, opacity: 0 }}
             whileInView={{ scaleY: 1, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
-            style={{
-              top: "20px",
-              bottom: "32px",
-            }}
           />
 
           {items.map((e, idx) => (
