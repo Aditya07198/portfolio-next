@@ -11,7 +11,6 @@ export function ExperienceTimeline({ limit }: { limit?: number }) {
         <h2 className="text-2xl font-semibold mb-10">Experience</h2>
 
         <div className="relative ml-5">
-          {/* Animated vertical line */}
           <div
             className="absolute left-[9px] w-px bg-slate-300 dark:bg-slate-700 origin-top"
             style={{ top: "20px", bottom: "32px" }}
@@ -33,7 +32,6 @@ export function ExperienceTimeline({ limit }: { limit?: number }) {
               transition={{ duration: 0.6, delay: idx * 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              {/* Dot */}
               <motion.div
                 className="absolute left-[4px] top-[8px] h-3 w-3 rounded-full bg-slate-500 dark:bg-slate-400 z-10"
                 initial={{ scale: 0 }}
@@ -42,13 +40,12 @@ export function ExperienceTimeline({ limit }: { limit?: number }) {
                 viewport={{ once: true, amount: 0.2 }}
               />
 
-              {/* Content */}
               <div className="relative z-20">
                 <h3 className="font-semibold text-base">
-                  {e.title} · {e.company}
+                  {e.title} | {e.company}
                 </h3>
                 <p className="text-sm text-slate-500 mb-2">
-                  {e.location} · {e.start} – {e.end}
+                  {e.location} | {e.start} - {e.end}
                 </p>
                 <ul className="list-disc ml-5 text-sm space-y-1">
                   {e.bullets.map((b, i) => (

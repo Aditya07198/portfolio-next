@@ -1,93 +1,76 @@
 export const skills = {
-  frontend: ["Angular", "React", "TypeScript", "HTML", "CSS", "Tailwind", "Next.js"],
-  backend: ["Node.js", "Java (Spring Boot)", "Express.js", "REST APIs", "Python"],
-  cloud: ["Azure App Services", "Azure Functions", "API Management", "Key Vault"],
-  db: ["Azure SQL Server", "MySQL"," MongoDB", "PostgreSQL", "Firebase"],
-  tools: ["IntelliJ", "VS Code", "Jira", "Confluence", "Git"],
-  other: ["SharePoint", "Power Automate", "AI Builder", "WordPress", "Customer Service"],
-  architecture: ["Microservices architecture", "RESTful APIs", "  Serverless computing", "Cloud infrastructure design", "CI/CD pipelines"],
-  softwareEngineering: ["Software testing", "Debugging", "Code review", "API development"],
-  agile: ["Scrum ceremonies", "Sprint planning", "Sprint review", "Backlog grooming", "Burndown analysis", "Jira", "Confluence"]
+  languages: ["Java", "JavaScript (ES6+)", "TypeScript", "Python", "PHP", "HTML5", "CSS3", "SQL"],
+  frontend: ["Angular (v12-v17)", "React", "RxJS", "NgRx", "Bootstrap", "SCSS", "Responsive Design", "WCAG Accessibility"],
+  backend: ["Spring Boot", "Node.js", "Express.js", "RESTful APIs", "Microservices", "JWT", "OAuth2", "MSAL"],
+  databases: ["Azure SQL Server", "MySQL", "Schema Design", "Indexing", "Query Optimization"],
+  cloudDevOps: ["Azure App Services", "API Management (APIM)", "Azure Functions", "Key Vault", "Blob Storage", "Azure DevOps CI/CD", "Maven", "npm", "Git"],
+  gisIntegrations: ["ArcGIS Online", "ArcGIS REST API", "Survey123", "Field Maps", "ArcGIS Token Validation"],
+  toolsMethodologies: ["Agile/Scrum", "Jira", "Confluence", "IntelliJ IDEA", "VS Code", "Eclipse", "Postman", "SharePoint", "Power Automate"]
 };
 
 export const experience = [
   {
     company: "Axella Compusoft Inc",
-    title: "Software Developer",
-    location: "Brampton, Ontario",
+    title: "Software Developer (Full-Stack, Cloud & DevOps)",
+    location: "Brampton, Ontario, Canada",
     start: "Dec 2021",
     end: "Present",
     bullets: [
-      "Built Angular/React/Node/Java apps. +20% user adoption.",
-      "Optimized REST APIs on Azure SQL. -25% query time.",
-      "Designed Azure infra: App Services, Functions, APIM, Key Vault.",
-      "Implemented CI/CD on Azure DevOps. -30% deployment time.",
-      "Ensured 95%+ defect resolution before release."
+      "Architected and delivered enterprise features using Angular (v12-v17) and Spring Boot with responsive WCAG-compliant interfaces.",
+      "Leading modernization efforts by migrating Java, Angular, Maven, and related dependencies to latest LTS versions while resolving deprecations and compatibility issues.",
+      "Designed and tuned Azure SQL Server schemas, normalization, and indexing for production-grade performance.",
+      "Built Azure infrastructure across App Services, APIM, Functions, Key Vault, and Blob Storage for DEV/IST/UAT/PRD environments.",
+      "Created Azure DevOps CI/CD pipelines for Maven, Node.js, and Angular with gated deployments and rollback paths.",
+      "Implemented OAuth2/MSAL authentication, JWT token handling, and ArcGIS token validation for secure API access.",
+      "Integrated ArcGIS Online, Survey123, and Field Maps into Azure-hosted apps for geospatial data ingestion and workflows."
     ]
   },
   {
-    company: "TD",
-    title: "Website Developer",
-    location: "Toronto, Ontario",
+    company: "TD Bank",
+    title: "Website Developer (Contract)",
+    location: "Toronto, Ontario, Canada",
     start: "Jun 2023",
     end: "Sep 2023",
     bullets: [
-      "Case management on SharePoint + Power Automate. -40% manual time.",
-      "Automated workflows. +15% user satisfaction.",
-      "Kept 99.5% uptime with testing + debugging."
+      "Developed a SharePoint use-case management platform from scratch aligned to business and end-user requirements.",
+      "Implemented Power Automate workflows for approvals and data movement to improve operational efficiency.",
+      "Performed maintenance, backups, and security patching while supporting end users under SLA targets.",
+      "Collaborated with cross-functional teams to gather requirements and continuously improve platform capability."
     ]
   },
   {
-    company: "Flexel Castors",
+    company: "R.K. Enterprise",
     title: "Web Developer",
     location: "Vadodara, India",
     start: "Jan 2020",
     end: "Jun 2021",
     bullets: [
-      "Maintained WordPress with custom HTML/CSS/JS/PHP.",
-      "Built Power Automate flows. -35% process errors.",
-      "Used AI Builder for sentiment analysis."
-    ]
-  },
-  {
-    company: "Etech Global Services",
-    title: "Customer Service Specialist",
-    location: "Vadodara, India",
-    start: "May 2019",
-    end: "Jan 2020",
-    bullets: [
-      "85% FCR. 90%+ CSAT.",
-      "Documented troubleshooting procedures."
+      "Developed and maintained WordPress websites using HTML, CSS, JavaScript, and PHP with strong cross-browser compatibility.",
+      "Built business automation workflows with Power Automate across data entry, document management, and approvals.",
+      "Optimized workflow performance and security using AI Builder capabilities including sentiment analysis and object detection."
     ]
   }
 ];
 
 export const projects = [
   {
-    title: "Enterprise Application for Data Management",
-    stack: ["Angular", "Spring Boot", "Azure SQL", "APIM", "Azure Functions", "CI/CD", "Azure App Services", "Survey123","ArcGIS Enterprise"],
-    summary: "Enterprise data workflows with Survey123 integration and CI/CD.",
-    link: "#",
-    repo: "#"
-  },
-  {
-    title: "Azure DevOps CI/CD Templates",
-    stack: ["YAML", "Azure"],
-    summary: "Reusable pipelines for Node, Angular, and Maven builds.",
+    title: "Enterprise Application for Field Survey System",
+    stack: ["Angular", "Spring Boot", "Azure Front Door", "APIM", "App Service", "Key Vault", "Azure SQL", "Blob Storage", "Azure DevOps CI/CD", "Survey123", "ArcGIS"],
+    summary: "Enterprise platform for OMAFRA with end-to-end delivery across frontend workflows, secure APIs, cloud infra, geospatial ingestion, and continuous LTS modernization.",
     link: "#",
     repo: "#"
   },
   {
     title: "Case Management Platform",
     stack: ["SharePoint", "Power Automate"],
-    summary: "Automated workflows and dashboards for internal ops.",
+    summary: "Use-case management solution with automated internal approval and operations workflows.",
     link: "#",
     repo: "#"
   },
   {
     title: "Portfolio Site",
     stack: ["Next.js", "Tailwind", "Framer Motion"],
-    summary: "This website. Responsive, fast, and SEO friendly.",
+    summary: "Personal portfolio highlighting full-stack, cloud, and enterprise delivery experience.",
     link: "#",
     repo: "#"
   }

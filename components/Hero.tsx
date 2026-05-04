@@ -35,7 +35,7 @@ export function Hero() {
         >
           <h1 className="text-4xl md:text-5xl font-bold">{site.name}</h1>
           <p className="text-lg text-slate-600 dark:text-slate-300">
-            {site.role} · {site.tagline}
+            {site.role} | {site.tagline}
           </p>
           <div className="flex gap-3">
             <Link

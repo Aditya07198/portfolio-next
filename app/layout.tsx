@@ -3,6 +3,7 @@ import "./globals.css";
 import { site } from "@/lib/site";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { ScrollProgress } from "@/components/ScrollProgress";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen flex flex-col">
+        <ScrollProgress />
         <Navbar />
         <main className="flex-1">{children}</main>
         <SpeedInsights />
